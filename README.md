@@ -6,15 +6,18 @@ Welcome to the **Yantra Launcher Script Hub**, an unofficial project that gather
 
 ## add your scripts
 
-if you want to add scripts just create a fork of this and modify `scripts.yaml`
+if you want to add scripts just create a fork of this and modify `scripts.json`
 
-to do that you need to follow thi structure
+to do that you need to follow this structure
 ```
-scripts:
-  - name: "Script 1"
-     url: "https://example.com/path/to/script1.lua"
+{
+  "scripts": [
+    {
+      "name": "Script name",
+      "url": "https://example.com/path/to/script1.lua"
+    }
+  ]
+}
 ```
 
 `name` is obliviusly the name of the script and `url` is the link to download
-
-Thank you for your contribution to the Yantra Launcher community! 
