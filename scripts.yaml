@@ -1,6 +1,0 @@
-scripts:
-  - name: "Script 1" 
-    url: "https://github.com/Anready/duolingokvak/archive/refs/heads/master.zip"
-  # dont remove the example below
-  #- name: "Script 1"
-    #url: "https://example.com/path/to/script1.lua"
