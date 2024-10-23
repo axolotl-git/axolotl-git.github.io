@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yantra Launcher Script Hub</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Yantra Launcher Script Hub</h1>
         <p>An unofficial project aimed at gathering all LUA scripts made for Yantra Launcher by the community in one place, easily accessible to everyone.</p>
-	<p>Please read the rule of the platform at <a href="https://axolotl-git.github.io/rule.html">this page.</a></p>
+        <p>Please read the rule of the platform at <a href="/rules/">this page</a>.</p>
     </header>
+
     <main>
+        <section id="search">
+            <input type="text" id="searchInput" placeholder="Search for scripts..." onkeyup="filterScripts()">
+        </section>
+
         <section id="script-list">
-    <h2>Available Scripts</h2>
-    <ul>
-        <!-- scripts will be added here dynamically -->
-    </ul>
-</section>
-
+            <h2>Available Scripts</h2>
+            <ul id="scriptUl">
+                
+            </ul>
+        </section>
     </main>
-    <footer>
-	<p>&copy; 2023 Yantra Launcher Script Hub. This is an open-source project licensed under the GNU General Public License v3.</p>
-	<p>To learn how to add your scripts, visit <a href="https://github.com/axolotl-git/axolotl-git.github.io">this page.</a></p>
-	<p>a special thanks to myxi and GTM</p>
 
+    <footer>
+        <p>&copy; 2023 Yantra Launcher Script Hub. This is an open-source project licensed under the GNU General Public License v3.</p>
+        <p>To learn how to add your scripts, visit <a href="https://github.com/axolotl-git/axolotl-git.github.io">this page</a>.</p>
+        <p>Special thanks to myxi and GTM</p>
     </footer>
+
+    <script>
+        function filterScripts() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let ul = document.getElementById('scriptUl');
+            let li = ul.getElementsByTagName('li');
+
+            for (let i = 0; i < li.length; i++) {
+                let textValue = li[i].textContent || li[i].innerText;
+                if (textValue.toLowerCase().indexOf(input) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>
