@@ -11,13 +11,8 @@ if you want to add scripts just create a fork of this and modify `scripts.json`
 To do that you need to follow this structure
 ```
 {
-  "scripts": [
-    {
-      "name": "Script name",
-      "url": "https://example.com/path/to/script1.lua"
-    }
-  ]
+  "Script name": "https://example.com/path/to/script1.lua"
 }
 ```
 
-`name` is obliviusly the name of the script and `url` is the link to download
+`Script Name` is obliviusly the name of the script and `https://example.com/path/to/script1.lua` is the link to download
