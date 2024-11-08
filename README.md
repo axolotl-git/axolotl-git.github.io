@@ -6,7 +6,7 @@ Welcome to the **Yantra Launcher Script Hub**, an unofficial project that gather
 
 ## Add your scripts
 
-if you want to add scripts just create a fork of this and modify `scripts.json`
+if you want to add scripts just create a fork of this and modify `scripts.json` then you can make a pull request 
 
 To do that you need to follow this structure
 ```
