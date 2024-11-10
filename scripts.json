@@ -1,3 +1,7 @@
-{
-  "Script 1": "https://github.com/Anready/duolingokvak/archive/refs/heads/master.zip"
-}
+[
+    {
+        "name": "name",
+        "url": "url",
+        "description": "desc"
+    },
+]

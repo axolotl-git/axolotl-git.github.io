@@ -1,18 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scriptList = document.getElementById('script-list');
 
-    // load file JSON
-    fetch('scripts.json')
+    // Load the JSON file
+    fetch('../scripts.json') // Adjusted path to go up one directory
         .then(response => response.json())
         .then(data => {
-            // Iterate over all key-value pairs in the JSON
-            Object.keys(data).forEach(key => {
+            // Iterate over each object in the JSON
+            data.forEach(item => {
                 const li = document.createElement('li');
-                li.innerHTML = `${key} <button class="download-btn" data-url="${data[key]}">Download</button>`;
+                li.innerHTML = `
+                    <strong>${item.name}</strong><br>
+                    <a href="${item.url}" target="_blank">${item.url}</a><br>
+                    <p>${item.description}</p>
+                    <button class="download-btn" data-url="${item.url}">Download</button>
+                `;
                 scriptList.querySelector('ul').appendChild(li);
             });
 
-            // add click event to download button
+            // Add click event to download buttons
             const downloadButtons = document.querySelectorAll('.download-btn');
             downloadButtons.forEach(button => {
                 button.addEventListener('click', () => {
