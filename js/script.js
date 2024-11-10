@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scriptList = document.getElementById('script-list');
 
     // Load the JSON file
-    fetch('axolotl-git.github.io/scripts.json') // Adjusted path to go up one directory
+    fetch('https://raw.githubusercontent.com/axolotl-git/axolotl-git.github.io/refs/heads/main/scripts.json') // Adjusted path to go up one directory
         .then(response => response.json())
         .then(data => {
             // Iterate over each object in the JSON
