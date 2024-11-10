@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scriptList = document.getElementById('script-list');
 
     // Load the JSON file
-    fetch('../scripts.json') // Adjusted path to go up one directory
+    fetch('/main/scripts.json') // Adjusted path to go up one directory
         .then(response => response.json())
         .then(data => {
             // Iterate over each object in the JSON
