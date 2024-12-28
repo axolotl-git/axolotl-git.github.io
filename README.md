@@ -15,7 +15,7 @@ To do that you need to follow this structure
 }
 ```
 
-`Script Name` is obliviusly the name of the script and `https://example.com/path/to/script1.lua` is the link to download
+`Script Name` is obliviusly the name of the script and `https://example.com/path/to/script1.lua` is the link to download, you can host the download anywhere or here on github, just don't use any link shortner
 
 ## troubleshooting
 
