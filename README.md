@@ -2,7 +2,7 @@
 ![YLSH_logo](https://media.discordapp.net/attachments/1306633173551288450/1322651752801243268/Senza_titolo_81_20241111160602.png?ex=6771a6ef&is=6770556f&hm=defe6ba88b5ec34307b0ebcab6525d83275ed5edde181706067cce6902ce450f&)
 ## Introduction
 
-Welcome to the **Yantra Launcher Script Hub**, an unofficial project that gathers all scripts created for Yantra Launcher by the community, making them easily accessible to everyone. This README file provides instructions on how to modify the project to add new scripts and manage their downloads.
+Welcome to the **Yantra Launcher Script Hub**, an unofficial project that gathers all scripts created for Yantra Launcher by the community, making them easily accessible to everyone. There are provided instructions on how to modify the project to add new scripts and manage their downloads.
 
 ## Add your scripts
 
