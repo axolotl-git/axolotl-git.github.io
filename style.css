@@ -1,0 +1,12 @@
+h1, h2, h3, p{
+  color: whitesmoke;
+ text-align: center;
+}
+svg{
+  text-align: center;
+  display: flex;
+}
+.avatar{
+  text-align: center;
+  border-radius: 50px;
+}
